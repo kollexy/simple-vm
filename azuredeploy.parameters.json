@@ -3,10 +3,10 @@
   "contentVersion": "1.0.0.0",
   "parameters": {
     "adminUsername": {
-      "value": "GEN-UNIQUE"
+      "value": "kcladmin"
     },
     "adminPassword": {
-      "value": "GEN-PASSWORD"
+      "value": "London123@@123"
     },
     "dnsLabelPrefix": {
       "value": "KCLTDLAB"
