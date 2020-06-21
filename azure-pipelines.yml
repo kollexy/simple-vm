@@ -1,4 +1,16 @@
 # Starter pipeline
+- task: AzureResourceManagerTemplateDeployment@3
+  inputs:
+    deploymentScope: 'Resource Group'
+    azureResourceManagerConnection: 'Free Trial (aa1816d8-6313-48e0-a4b9-b9a1eb6ef390)'
+    subscriptionId: 'aa1816d8-6313-48e0-a4b9-b9a1eb6ef390'
+    action: 'Create Or Update Resource Group'
+    resourceGroupName: 'kcl-dev-rg'
+    location: 'UK South'
+    templateLocation: 'Linked artifact'
+    csmFile: '$(System.DefaultWorkingDirectory)/_kollexy.simple-vm'
+    csmParametersFile: '$(System.DefaultWorkingDirectory)/_kollexy.simple-vm'
+    deploymentMode: 'Incremental'
 # Start with a minimal pipeline that you can customize to build and deploy your code.
 # Add steps that build, run tests, deploy, and more:
 # https://aka.ms/yaml
